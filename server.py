@@ -49,7 +49,7 @@ def process_message_route():
     openai_response_speech = text_to_speech(openai_response_text, voice)
 
     # convert openai_response_speech to base64 string so it can be sent back in the JSON response
-    	#NOTE: __The process of converting the Base64-encoded audio string back into binary audio for playback or further processing would occur outside the steps (for example, using audio playback libraries, in HTML )
+    	#NOTE: __.__The process of converting the Base64-encoded audio string back into binary audio for playback or further processing would occur outside the steps (for example, using audio playback libraries, in HTML )
     openai_response_speech = base64.b64encode(openai_response_speech).decode('utf-8')
 
     # Send a JSON response back to the user containing their message's response both in text and speech formats
